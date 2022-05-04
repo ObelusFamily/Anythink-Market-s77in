@@ -17,6 +17,7 @@ Make sure your server is up and running to serve requests.
 - Settings page (URL: /#/settings )
 - Editor page to create/edit articles (URL: /#/editor, /#/editor/slug )
 - Item page (URL: /#/item/slug )
+  - Your Feed/Global Feed 
   - Delete item button (only shown to item's author)
   - Render markdown from server client side
   - Comments section at bottom of page
