@@ -8,8 +8,8 @@
 Item.create(
     title: "Reece the Dog",
     slug: "Dog",
-    description: "The best dog around"
-    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.k9web.com%2Fbreeds%2Faustralian-shepherd-lab-mix%2F&psig=AOvVaw2zAwAjfrcWP-xNPvLOMqj7&ust=1651789429485000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKjZu6XxxvcCFQAAAAAdAAAAABAD",
+    description: "The best dog around",
+    image: "https://media.istockphoto.com/photos/crazy-looking-black-and-white-border-collie-dog-say-looking-intently-picture-id1213516345?k=20&m=1213516345&s=612x612&w=0&h=_XUSwcrXe5HjI2QEby0ex6Tl1fB_YJUzUU8o2cUt0YA=",
     favorites_count: 257,
     user_id: 1
 )
