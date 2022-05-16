@@ -24,3 +24,4 @@
     Comment.create(
         body: Faker::Quote.yoda
     )
+end
