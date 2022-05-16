@@ -5,17 +5,22 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Item.create(
-    title: "Reece the Dog",
-    slug: "Dog",
-    description: "The best dog around",
-    image: "https://media.istockphoto.com/photos/crazy-looking-black-and-white-border-collie-dog-say-looking-intently-picture-id1213516345?k=20&m=1213516345&s=612x612&w=0&h=_XUSwcrXe5HjI2QEby0ex6Tl1fB_YJUzUU8o2cUt0YA=",
-    favorites_count: 257,
-    user_id: 1
-)
-User.create(
-    email: "reece@reece.com",
-    username: "reecethedog",
-    image: "https://media.istockphoto.com/photos/crazy-looking-black-and-white-border-collie-dog-say-looking-intently-picture-id1213516345?k=20&m=1213516345&s=612x612&w=0&h=_XUSwcrXe5HjI2QEby0ex6Tl1fB_YJUzUU8o2cUt0YA=",
-    bio: "The best dog around!!!"
-)
+100.times do
+
+    Item.create(
+    title: Faker::Kpop.i_groups ,
+    slug: Faker::Kpop.ii_groups,
+    description: Faker::Kpop.iii_groups,
+    image: Faker::Kpop.girl_groups,
+    favorites_count: rand(1..100),
+    user_id: rand(1..100)
+    )
+    User.create(
+    email: Faker::Internet.email,
+    username: Faker::Name.name,
+    image: Faker::LoremPixel.image,
+    bio: Faker::Movies::Ghostbusters.quote
+    )
+    Comment.create(
+        body: Faker::Quote.yoda
+    )
